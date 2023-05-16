@@ -26,8 +26,8 @@ const Forgot =({navigation}) => {
     }
   }
 
-  const handleEmailChange = (text) => {
-    setEmail(text);
+  const handleEmailChange = (email) => {
+    setEmail(email);
     validateInput();
   }
   const handleNumberChange = (number) => {
