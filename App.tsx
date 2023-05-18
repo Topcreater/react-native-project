@@ -18,7 +18,7 @@ import Welcome from './screens/Welcome';
 import LogIn from './screens/Login';
 import Singup from './screens/Signup';
 import Forgot from './screens/Forgot';
-
+import Payments from './screens/Payments';
 
 
 const Stack = createNativeStackNavigator();
@@ -34,6 +34,7 @@ export default function App(): JSX.Element {
 <Stack.Screen  name='Welcome page' component={Welcome} options={{ headerShown: false, }} /> 
 <Stack.Screen  name='LogIn page' component={LogIn}  options={{ headerShown: false, }}/>
 <Stack.Screen name='SignUp page' component={Singup} options={{ headerShown: false, }}/>
+<Stack.Screen name='Payments page' component={Payments} options={{ headerShown: false, }}/>
 <Stack.Screen name='Forgot page' component={Forgot} options={{ headerShown: false, }}/>
 
  </Stack.Navigator>
