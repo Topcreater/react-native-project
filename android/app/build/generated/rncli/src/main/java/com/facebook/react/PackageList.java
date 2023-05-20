@@ -11,6 +11,8 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// @stripe/stripe-react-native
+import com.reactnativestripesdk.StripeSdkPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
@@ -62,6 +64,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new StripeSdkPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new SplashScreenReactPackage()

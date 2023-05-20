@@ -2,102 +2,40 @@
 import React from 'react';
 import {
   SafeAreaView,
-  Text,
-  TextInput,
   View,
-  TouchableOpacity,
-  Image,
-  StyleSheet,
-  style,
-  ImageBackground,
   ScrollView,
 } from 'react-native';
 
-
-import firstImage from '../assest/first.jpg';
-import WelcomeImage from '../assest/welcome-img.png'
-function Welcome({navigation}) {
+import { Heading,  TextFour } from '../Componets/HeadingText';
+import { BgImage, WelcomeImage } from '../Componets/BgImage';
+import BtnsCard from '../Componets/Btns';
+function Welcome({ navigation }) {
   return (
     <SafeAreaView>
       <View>
-        <ImageBackground style={styles.Image} source={firstImage} />
-<ScrollView>
-    <Image source={WelcomeImage}  style={styles.Image2}></Image>
-        <Text style={styles.text}>Welcome buddy!</Text>
-        <Text style={styles.text2}>Join our team and get best</Text>
-      
-        <TouchableOpacity  onPress={() =>
-        navigation.navigate('LogIn page')
-      }>
-          <Text style={styles.login}>Login</Text>
-          </TouchableOpacity>
-          <Text style={styles.text4}>----Or----</Text>
-          <TouchableOpacity  onPress={() =>
-        navigation.navigate('SignUp page')
-      } >
-          <Text style={styles.sign}>Create account</Text>
-          </TouchableOpacity>
-          </ScrollView>
-        
+        <BgImage />
+        <ScrollView>
+          <WelcomeImage />
+          <Heading
+            textData="Welcome buddy!"
+            textData2="Join our team and get best"
+          />
+          <BtnsCard Btns="Login" onPress={() =>
+            navigation.navigate('LogIn page')
+          }
+          />
+          <TextFour textData4="----Or----" />
+          <BtnsCard Btns="Sign up" onPress={() =>
+            navigation.navigate('SignUp page')
+          }
+          />
+        </ScrollView>
+
       </View>
-      
+
     </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  Image: {
-    height: 750,
-    width: 400,
-    flex: 1,
-  },
-  Image2:{
-width: 300,
-height: 300,
-alignSelf: 'center'
-  },
-  text: {
-    fontSize: 40,
-    textAlign: 'center',
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  text2: {
-    fontSize: 30,
-    textAlign: 'center',
-    marginVertical: 20,
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  login:{
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: `#2c2b3f`,
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-    textAlign:'center',
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  text4:{
-    fontSize: 30,
-    textAlign:'center',
-    color: 'white',
-  },
-  sign:{
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: `#2c2b3f`,
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-    textAlign:'center',
-    color: 'white',
-    fontWeight: 'bold',
-  }
-});
 
 export default Welcome;

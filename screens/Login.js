@@ -1,19 +1,16 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import {
-  SafeAreaView,
-  Text,
-  TextInput,
   View,
   TouchableOpacity,
-  StyleSheet,
-  ImageBackground,
   ScrollView,
-  
 } from 'react-native';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import firstImage from '../assest/first.jpg';
-const LogIn =({navigation}) => {
+import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { Heading,  TextFour, ForgotText } from '../Componets/HeadingText';
+import {BgImage} from '../Componets/BgImage';
+import BtnsCard from '../Componets/Btns';
+import { InputFiled, InputFieldsPassword } from '../Componets/InputFields';
+const LogIn = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isValid, setIsValid] = useState(false);
@@ -21,14 +18,14 @@ const LogIn =({navigation}) => {
   const validateInput = () => {
     if (email && password && password.length >= 8) {
       setIsValid(true);
-    } else if(email === '' &&  password === ''){
+    } else if (email === '' && password === '') {
       setIsValid(false);
     }
   }
   const handleEmailChange = (email) => {
     setEmail(email);
     validateInput();
-    }
+  }
 
   const handlePasswordChange = (passowrd) => {
     setPassword(passowrd);
@@ -41,124 +38,51 @@ const LogIn =({navigation}) => {
       setPassword('');
     } else {
       alert('Please enter a valid email and password');
-   
+
     }
   }
   return (
-    <SafeAreaView>
-      <View>
-        <ImageBackground style={styles.Image} source={firstImage} />
-<ScrollView>
-        <Text style={styles.text}>Login Here!</Text>
-        <Text style={styles.text2}>Welcome back Join your account</Text>
-        <TextInput
+
+    <View>
+      <BgImage />
+      <ScrollView>
+        <Heading
+          textData="Login Here!"
+          textData2="Welcome back Join your account"
+        />
+        <InputFiled
           placeholder="Email"
           value={email}
           onChangeText={handleEmailChange}
-          autoCapitalize='none'
           keyboardType='email-address'
-          placeholderTextColor={Colors.black}
-          style={styles.input1}></TextInput>
-        <TextInput
+          placeholderTextColor='black'
+        />
+        <InputFieldsPassword
           placeholder="password"
           value={password}
           onChangeText={handlePasswordChange}
+          placeholderTextColor='black'
           secureTextEntry={true}
-          placeholderTextColor={Colors.black}
-          style={styles.input1}></TextInput>
-      {/* {!isValid && <Text style={styles.errorText}>Please enter a valid email and password (password must be at least 8 characters)</Text>} */}
+        />
 
-        <TouchableOpacity  onPress={() =>
-        navigation.navigate('Forgot page')
-      }>
-          <Text style={styles.text3}>forgot your password?</Text>
+        <TouchableOpacity onPress={() =>
+          navigation.navigate('Forgot page')
+        }>
+          <ForgotText textData5="forgot your password?" />
         </TouchableOpacity>
-        <TouchableOpacity onPress={handleSubmit} >
-          <Text style={styles.login}>Login</Text>
-          </TouchableOpacity>
-          <Text style={styles.text4}>----Or----</Text>
-          <TouchableOpacity  onPress={() =>
-        navigation.navigate('SignUp page') 
-      }>
-          <Text style={styles.sign}>Create account</Text>
-          </TouchableOpacity>
-          </ScrollView>
-        
-      </View>
-      
-    </SafeAreaView>
+        <BtnsCard Btns="Login" onPress={handleSubmit} />
+        <TextFour textData4="----Or----" />
+        <BtnsCard Btns="Create account" onPress={() =>
+          navigation.navigate('SignUp page')
+        }
+        />
+      </ScrollView>
+
+    </View>
+
+
   );
 }
 
-const styles = StyleSheet.create({
-  Image: {
-    height: 750,
-    width: 400,
-    flex: 1,
-  },
-  text: {
-    fontSize: 40,
-    textAlign: 'center',
-    marginTop: 80,
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  text2: {
-    fontSize: 30,
-    textAlign: 'center',
-    marginVertical: 30,
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  input1: {
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-  },
-  text3:{
-fontSize: 20,
-textAlign:'right',
-color: 'white',
-margin: 20,
-fontWeight: 'bold',
-  },
-  login:{
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: `#2c2b3f`,
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-    textAlign:'center',
-    color: 'white',
-fontWeight: 'bold',
-  },
-  errorText: {
-    color: 'red',
-    marginTop: 10,
-  },
-  text4:{
-    fontSize: 30,
-    textAlign:'center',
-    color: 'white',
-  },
-  sign:{
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: `#2c2b3f`,
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-    textAlign:'center',
-    color: 'white',
-    fontWeight: 'bold',
-  }
-});
 
 export default LogIn;

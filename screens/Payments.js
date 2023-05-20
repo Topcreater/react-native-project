@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   Text,
@@ -13,84 +13,75 @@ import {
   ScrollView,
   Button
 } from 'react-native';
+import PayBtn from '../Componets/PayBtn';
+import { CardField, createToken } from '@stripe/stripe-react-native';
 
+function Payments() {
+  const [cardInfo, setCardInfo] = useState(null);
 
-import firstImage from '../assest/first.jpg';
-import WelcomeImage from '../assest/welcome-img.png'
-function Payments({navigation}) {
-  return (
-    <SafeAreaView>
-      <View>
-        <ImageBackground style={styles.Image} source={firstImage} />
-<ScrollView>
-    <Image source={WelcomeImage}  style={styles.Image2}></Image>
-        <Text style={styles.text}>Welcome buddy!</Text>
-        <Text style={styles.text2}>Join our team and get best</Text>
-      
-      
-          <Text style={styles.sign}>Create account</Text>
-         
-          </ScrollView>
-        
-      </View>
-      
-    </SafeAreaView>
-  );
+  const fetchCardDetail = (cardDetails) => {
+
+if (cardDetails.complete) {
+  setCardInfo(cardDetails)
+} else{
+  setCardInfo(null)
+}
+  }
+  const onDone =async() => {
+  console.log("cardInfocardIndo",cardInfo)
+  if (!!cardInfo) {
+    try {
+      const resToken = await createToken[{...cardInfo, type:'Card'}]
+      console.log( resToken)
+    } catch (error) {
+      alert("Error are ocure during create token")
+    }
+  }
+  disabled = false
 }
 
-const styles = StyleSheet.create({
-  Image: {
-    height: 750,
-    width: 400,
-    flex: 1,
-  },
-  Image2:{
-width: 300,
-height: 300,
-alignSelf: 'center'
-  },
-  text: {
-    fontSize: 40,
-    textAlign: 'center',
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  text2: {
-    fontSize: 30,
-    textAlign: 'center',
-    marginVertical: 20,
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  login:{
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: `#2c2b3f`,
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-    textAlign:'center',
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  text4:{
-    fontSize: 30,
-    textAlign:'center',
-    color: 'white',
-  },
-  sign:{
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: `#2c2b3f`,
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-    textAlign:'center',
-    color: 'white',
-    fontWeight: 'bold',
+
+
+  return (
+    <View style={styles.container}>
+    <SafeAreaView style={{flex: 1}}>
+      <View style={{padding: 10}}>
+       {/* <ImageBackground style={styles.Image} source={firstImage} /> */}
+       <CardField
+      postalCodeEnabled={false}
+      placeholders={{
+        number: '4242 4242 4242 4242',
+      }}
+      cardStyle={{
+        backgroundColor: 'black',
+        textColor: 'white',
+      }}
+      style={{
+        width: '100%',
+        height: 50,
+        marginVertical: 30,
+      }}
+      onCardChange={(cardDetails) => {
+        fetchCardDetail (cardDetails)
+      }}
+      onFocus={(focusedField) => {
+        console.log('focusField', focusedField);
+      }}
+    />
+   <PayBtn
+   onPress={onDone}
+   disabled={!cardInfo}
+   />
+    </View>
+    </SafeAreaView>
+    </View>
+  );
+}
+const styles = StyleSheet.create({ 
+
+  container: {
+   flex: 1, 
   }
-});
+})
 
 export default Payments;

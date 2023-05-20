@@ -6,6 +6,7 @@
 !.vscode/*.code-snippets
 !.vscode/*.node_modules
 node_modules/
+.env
 # Local History for Visual Studio Code
 .history/
 

@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import {
   SafeAreaView,
-  Text,
-  TextInput,
   View,
-  TouchableOpacity,
-  StyleSheet,
-  ImageBackground,
   ScrollView,
-  Button,
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import firstImage from '../assest/first.jpg';
-
+import {BgImage} from '../Componets/BgImage';
+import {Heading,  TextFour} from '../Componets/HeadingText';
+import BtnsCard from '../Componets/Btns';
+import { InputFiled, InputFieldsPassword } from '../Componets/InputFields';
 
 const Singup = ({ navigation }) => {
   const [name, setName] = useState('');
@@ -21,10 +17,10 @@ const Singup = ({ navigation }) => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [isValid, setIsValid] = useState(false);
-  
-  
+
+
   const validateInput = () => {
-    if (name  && alphaRegex.test(name) && email && regex.test(email) && number&& numericRegex.test(number) && password && confirmPassword) {
+    if (name && alphaRegex.test(name) && email && regex.test(email) && number && numericRegex.test(number) && password && confirmPassword) {
       setIsValid(true);
     } else {
       setIsValid(false);
@@ -34,7 +30,7 @@ const Singup = ({ navigation }) => {
   const handlenameChange = (text) => {
     setName(text);
     validateInput();
-    
+
   }
   const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
   const handleEmailChange = (email) => {
@@ -69,81 +65,78 @@ const Singup = ({ navigation }) => {
       alert('Your form have been submited');
       setEmail('');
       setPassword('');
+      setConfirmPassword('');
+      setName('');
+      setNumber('');
     } else {
       alert('Please enter a valid email and number and password');
     }
   }
-const paymentValid = () => {
-  if (isValid && password === confirmPassword) {
-    navigation.navigate('Payments page')
+  const paymentValid = () => {
+    if (isValid && password === confirmPassword) {
+      navigation.navigate('Payments page')
+    }
   }
-}
 
   functionCombined = () => {
-    handleSubmit();
-    validatePasswords();
-    paymentValid();
-  }  
+    // handleSubmit();
+    // validatePasswords();
+    // paymentValid();
+  }
 
   return (
     <SafeAreaView>
       <View>
-        <ImageBackground style={styles.Image} source={firstImage} />
+        <BgImage />
         <ScrollView>
-          <Text style={styles.text}>Create account</Text>
-          <Text style={styles.text2}>Fill all the input belwo Here</Text>
-          <TextInput
-            placeholder="Name"
+          <Heading
+            textData="Create account"
+            textData2="Fill all inputs data"
+          />
+          <InputFiled
+            placeholder="Your Name"
             value={name}
             onChangeText={handlenameChange}
             keyboardType='text'
-            autoFocus
-            placeholderTextColor={Colors.black}
-            style={styles.input1}></TextInput>
-          <TextInput
-            placeholder="Email"
+            placeholderTextColor='black'
+          />
+          <InputFiled
+            placeholder="Your Email"
             value={email}
             onChangeText={handleEmailChange}
-            autoCapitalize='none'
             keyboardType='email-address'
-            placeholderTextColor={Colors.black}
-            style={styles.input1}></TextInput>
-          <TextInput
-            placeholder="Number"
+            placeholderTextColor='black'
+          />
+          <InputFiled
+            placeholder="Your Number"
             value={number}
             onChangeText={handleNumberChange}
-            placeholderTextColor={Colors.black}
-            style={styles.input1}></TextInput>
-          <TextInput
-            placeholder="password"
+            keyboardType='numeric'
+            placeholderTextColor='black'
+          />
+          <InputFieldsPassword
+            placeholder="New password"
             value={password}
             onChangeText={handlePasswordChange}
+            placeholderTextColor='black'
             secureTextEntry={true}
-            placeholderTextColor={Colors.black}
-            style={styles.input1}></TextInput>
-          <TextInput
-            placeholder="Confrim password"
-            value={confirmPassword}
+          />
+          <InputFieldsPassword
+            placeholder="password"
+            value={password}
             onChangeText={handleconfirmPasswordChange}
+            placeholderTextColor='black'
             secureTextEntry={true}
-            placeholderTextColor={Colors.black}
-            style={styles.input1}></TextInput>
-          <TouchableOpacity onPress={functionCombined}>
-            <Text style={styles.login}>Sign Up</Text>
-          </TouchableOpacity>
-          {/* <View>
-            {isValid ? (
-              <Button title="Payments!" onPress={() =>
-                navigation.navigate('Payments page')
-              } style={styles.login} />
-            ) : null}
-          </View> */}
-          <Text style={styles.text4}>----Or----</Text>
-          <TouchableOpacity onPress={() =>
+          />
+          <BtnsCard Btns="Sign up" onPress={() =>
+            navigation.navigate('Payments page')
+          }
+          />
+          <TextFour textData4="----Or----" />
+          <BtnsCard Btns="Login" onPress={() =>
             navigation.navigate('LogIn page')
-          }>
-            <Text style={styles.sign}>LogIn</Text>
-          </TouchableOpacity>
+          }
+          />
 
         </ScrollView>
       </View>
@@ -151,68 +144,6 @@ const paymentValid = () => {
   );
 }
 
-const styles = StyleSheet.create({
-  Image: {
-    height: 750,
-    width: 400,
-    flex: 1,
-  },
-  text: {
-    fontSize: 40,
-    textAlign: 'center',
-    marginTop: 20,
-    color: 'white',
-    fontWeight: 'bold',
-    marginTop: 40,
-  },
-  text2: {
-    fontSize: 20,
-    marginLeft: 30,
-    marginTop: 30,
-    color: 'white',
-    fontWeight: 'bold',
 
-  },
-  input1: {
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-  },
-
-  login: {
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: `#2c2b3f`,
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-    textAlign: 'center',
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  text4: {
-    fontSize: 30,
-    textAlign: 'center',
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  sign: {
-    fontSize: 20,
-    padding: 10,
-    backgroundColor: `#2c2b3f`,
-    borderRadius: 20,
-    marginVertical: 10,
-    width: 300,
-    alignSelf: 'center',
-    textAlign: 'center',
-    color: 'white',
-    fontWeight: 'bold',
-  }
-});
 
 export default Singup;
