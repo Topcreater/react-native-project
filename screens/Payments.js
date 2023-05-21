@@ -2,16 +2,8 @@
 import React, { useState } from 'react';
 import {
   SafeAreaView,
-  Text,
-  TextInput,
   View,
-  TouchableOpacity,
-  Image,
   StyleSheet,
-  style,
-  ImageBackground,
-  ScrollView,
-  Button
 } from 'react-native';
 import PayBtn from '../Componets/PayBtn';
 import { CardField, createToken } from '@stripe/stripe-react-native';
@@ -29,15 +21,15 @@ if (cardDetails.complete) {
   }
   const onDone =async() => {
   console.log("cardInfocardIndo",cardInfo)
-  if (!!cardInfo) {
+  if (cardInfo) {
     try {
-      const resToken = await createToken[{...cardInfo, type:'Card'}]
+      const resToken = await createToken({...cardInfo, type:'Card'})
       console.log( resToken)
     } catch (error) {
-      alert("Error are ocure during create token")
+      alert("Error are ocure during create token",error)
     }
   }
-  disabled = false
+  
 }
 
 
@@ -46,7 +38,6 @@ if (cardDetails.complete) {
     <View style={styles.container}>
     <SafeAreaView style={{flex: 1}}>
       <View style={{padding: 10}}>
-       {/* <ImageBackground style={styles.Image} source={firstImage} /> */}
        <CardField
       postalCodeEnabled={false}
       placeholders={{
@@ -72,6 +63,7 @@ if (cardDetails.complete) {
    onPress={onDone}
    disabled={!cardInfo}
    />
+   
     </View>
     </SafeAreaView>
     </View>
@@ -85,3 +77,41 @@ const styles = StyleSheet.create({
 })
 
 export default Payments;
+
+// import React, { useEffect } from 'react';
+// import { View, Button } from 'react-native';
+// import { useStripe } from '@stripe/stripe-react-native';
+
+// const Payments = () => {
+//   const { createTokenWithCard } = useStripe();
+
+//   useEffect(() => {
+   
+//   }, []);
+
+//   const handleCreateToken = async () => {
+//     try {
+//       const token = await createTokenWithCard({
+  
+//         number: '4242424242424242',
+//         expMonth: 12,
+//         expYear: 2024,
+//         cvc: '123',
+//       });
+
+     
+//       console.log(token);
+//     } catch (error) {
+      
+//       console.log('Token creation error:', error);
+//     }
+//   };
+
+//   return (
+//     <View>
+//       <Button onPress={handleCreateToken} title="Create Token" />
+//     </View>
+//   );
+// };
+
+// export default Payments;

@@ -19,17 +19,19 @@ import LogIn from './screens/Login';
 import Singup from './screens/Signup';
 import Forgot from './screens/Forgot';
 import Payments from './screens/Payments';
-import { SP_key } from '@env';
+// import { SP_key } from '@env';
 import { StripeProvider } from '@stripe/stripe-react-native';
 const Stack = createNativeStackNavigator();
 export default function App(): JSX.Element {
- 
+  const stripePublishableKey = "pk_test_51N8zjbIMZqODXWwi8usTjeJYKAsHwWJNTEsaFpvMoaSMXRxtWeQoyBSjqi7pj5xamGvVrQX2Myenmssy8vUNmpQg00LoDO2QsA";
   useEffect(() => {
     SplashScreen.hide();
   }, []);
   
   return (
- 
+    <StripeProvider
+    publishableKey={stripePublishableKey}  >
+  
     <NavigationContainer>
       <Stack.Navigator>
 <Stack.Screen  name='Welcome page' component={Welcome} options={{ headerShown: false, }} /> 
@@ -38,16 +40,8 @@ export default function App(): JSX.Element {
 <Stack.Screen name='Payments page' component={Payments} options={{ headerShown: false, }}/>
 <Stack.Screen name='Forgot page' component={Forgot} options={{ headerShown: false, }}/>
   </Stack.Navigator>
-<View>
-<StripeProvider
-      publishableKey={SP_key}
-      merchantIdentifier="merchant.identifier" // required for Apple Pay
-      urlScheme="your-url-scheme" // required for 3D Secure and bank redirects
-      >
-      
-    </StripeProvider>
-</View>
       </NavigationContainer>
+      </StripeProvider>
 
   );
 }

@@ -97,7 +97,7 @@ const Singup = ({ navigation }) => {
             placeholder="Your Name"
             value={name}
             onChangeText={handlenameChange}
-            keyboardType='text'
+            keyboardType='TextInput'
             placeholderTextColor='black'
           />
           <InputFiled
