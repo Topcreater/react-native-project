@@ -79,9 +79,9 @@ const Singup = ({ navigation }) => {
   }
 
   functionCombined = () => {
-    // handleSubmit();
-    // validatePasswords();
-    // paymentValid();
+    handleSubmit();
+    validatePasswords();
+    paymentValid();
   }
 
   return (
@@ -128,9 +128,7 @@ const Singup = ({ navigation }) => {
             placeholderTextColor='black'
             secureTextEntry={true}
           />
-          <BtnsCard Btns="Sign up" onPress={() =>
-            navigation.navigate('Payments page')
-          }
+            <BtnsCard Btns="Sign up" onPress={functionCombined}
           />
           <TextFour textData4="----Or----" />
           <BtnsCard Btns="Login" onPress={() =>
