@@ -79,24 +79,23 @@ const Singup = ({ navigation }) => {
     }
   }
   state = {
-    name: '',
+    handlenameChange: '',
     email: '',
     number: '',
     password:'',
     confirmPassword:''
   };
-  handleSubmit = () => {
-    const { name, email, number, password, confirmPassword } = this.state;
+  const handlePostData = () => {
     
     const data = {
-      name: name,
-      email: email,
-      number: number,
-      password: password,
-      confirmPassword: confirmPassword
+      name: handlenameChange,
+      email: handleEmailChange,
+      number: handleNumberChange,
+      password: handlePasswordChange,
+      confirmPassword: handleconfirmPasswordChange
     };
   
-    axios.post('https://api.example.com/endpoint', data)
+    axios.post('qE3or2MJCQD7S7o5sdUJDnO0xh8FsErr', data)
       .then(response => {
         // Handle the API response
         console.log(response.data);
@@ -112,6 +111,7 @@ const Singup = ({ navigation }) => {
     handleSubmit();
     validatePasswords();
     paymentValid();
+    handlePostData();
   }
 
   return (
@@ -125,8 +125,8 @@ const Singup = ({ navigation }) => {
           />
           <InputFiled
             placeholder="Your Name"
-            value={name}
-            onChangeText={handlenameChange}
+            value={this.state.name}
+        onChangeText={text => this.setState({ name: text })}
             keyboardType='default'
             placeholderTextColor='black'
           />
