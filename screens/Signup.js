@@ -9,6 +9,7 @@ import {BgImage} from '../Componets/BgImage';
 import {Heading,  TextFour} from '../Componets/HeadingText';
 import BtnsCard from '../Componets/Btns';
 import { InputFiled, InputFieldsPassword } from '../Componets/InputFields';
+import axios from 'axios';
 
 const Singup = ({ navigation }) => {
   const [name, setName] = useState('');
@@ -77,8 +78,37 @@ const Singup = ({ navigation }) => {
       navigation.navigate('Payments page')
     }
   }
+  state = {
+    name: '',
+    email: '',
+    number: '',
+    password:'',
+    confirmPassword:''
+  };
+  handleSubmit = () => {
+    const { name, email, number, password, confirmPassword } = this.state;
+    
+    const data = {
+      name: name,
+      email: email,
+      number: number,
+      password: password,
+      confirmPassword: confirmPassword
+    };
+  
+    axios.post('https://api.example.com/endpoint', data)
+      .then(response => {
+        // Handle the API response
+        console.log(response.data);
+      })
+      .catch(error => {
+        // Handle any errors
+        console.error('Error:', error);
+      });
+  };
+  
 
-  functionCombined = () => {
+  const functionCombined = () => {
     handleSubmit();
     validatePasswords();
     paymentValid();
@@ -97,7 +127,7 @@ const Singup = ({ navigation }) => {
             placeholder="Your Name"
             value={name}
             onChangeText={handlenameChange}
-            keyboardType='TextInput'
+            keyboardType='default'
             placeholderTextColor='black'
           />
           <InputFiled
