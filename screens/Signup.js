@@ -78,24 +78,18 @@ const Singup = ({ navigation }) => {
       navigation.navigate('Payments page')
     }
   }
-  state = {
-    handlenameChange: '',
-    email: '',
-    number: '',
-    password:'',
-    confirmPassword:''
-  };
+ 
   const handlePostData = () => {
     
     const data = {
-      name: handlenameChange,
-      email: handleEmailChange,
-      number: handleNumberChange,
-      password: handlePasswordChange,
-      confirmPassword: handleconfirmPasswordChange
+      name: name,
+      email: email,
+      number: number,
+      password: password,
+      confirmPassword: confirmPassword
     };
   
-    axios.post('qE3or2MJCQD7S7o5sdUJDnO0xh8FsErr', data)
+    axios.post('https://jsonplaceholder.typicode.com/posts', data)
       .then(response => {
         // Handle the API response
         console.log(response.data);
@@ -125,8 +119,8 @@ const Singup = ({ navigation }) => {
           />
           <InputFiled
             placeholder="Your Name"
-            value={this.state.name}
-        onChangeText={text => this.setState({ name: text })}
+            value={name}
+        onChangeText={handlenameChange}
             keyboardType='default'
             placeholderTextColor='black'
           />
@@ -152,8 +146,8 @@ const Singup = ({ navigation }) => {
             secureTextEntry={true}
           />
           <InputFieldsPassword
-            placeholder="password"
-            value={password}
+            placeholder="confirm password"
+            value={confirmPassword}
             onChangeText={handleconfirmPasswordChange}
             placeholderTextColor='black'
             secureTextEntry={true}
