@@ -78,40 +78,4 @@ const styles = StyleSheet.create({
 
 export default Payments;
 
-// import React, { useEffect } from 'react';
-// import { View, Button } from 'react-native';
-// import { useStripe } from '@stripe/stripe-react-native';
 
-// const Payments = () => {
-//   const { createTokenWithCard } = useStripe();
-
-//   useEffect(() => {
-   
-//   }, []);
-
-//   const handleCreateToken = async () => {
-//     try {
-//       const token = await createTokenWithCard({
-  
-//         number: '4242424242424242',
-//         expMonth: 12,
-//         expYear: 2024,
-//         cvc: '123',
-//       });
-
-     
-//       console.log(token);
-//     } catch (error) {
-      
-//       console.log('Token creation error:', error);
-//     }
-//   };
-
-//   return (
-//     <View>
-//       <Button onPress={handleCreateToken} title="Create Token" />
-//     </View>
-//   );
-// };
-
-// export default Payments;

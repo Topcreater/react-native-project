@@ -41,6 +41,15 @@ const LogIn = ({ navigation }) => {
 
     }
   }
+  const paymentValid = () => {
+    if (isValid ) {
+      navigation.navigate('Getdata page')
+    }
+  }
+  const functionCombined = () => {
+    handleSubmit();
+    paymentValid();
+  }
   return (
 
     <View>
@@ -70,7 +79,7 @@ const LogIn = ({ navigation }) => {
         }>
           <ForgotText textData5="forgot your password?" />
         </TouchableOpacity>
-        <BtnsCard Btns="Login" onPress={handleSubmit} />
+        <BtnsCard Btns="Login" onPress={functionCombined} />
         <TextFour textData4="----Or----" />
         <BtnsCard Btns="Create account" onPress={() =>
           navigation.navigate('SignUp page')

@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { View, Text, FlatList,StyleSheet } from 'react-native';
 import PayBtn from '../Componets/PayBtn';
 
 function Getdata() {
@@ -11,7 +11,7 @@ function Getdata() {
     }, []);
     const fetchData = async () => {
         try {
-          const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+          const response = await fetch('https://jsonplaceholder.typicode.com');
           const jsonData = await response.json();
           setData(jsonData);
         } catch (error) {
@@ -25,12 +25,16 @@ function Getdata() {
         </View>
       );
   return (
+    <View>
     <FlatList
       data={data}
       renderItem={renderItem}
       keyExtractor={(item) => item.id.toString()}
     />
+    <Text>Hello world</Text>
+    </View>
   );
+
 }
 const styles = StyleSheet.create({ 
 
