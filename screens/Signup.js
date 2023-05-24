@@ -9,7 +9,6 @@ import {BgImage} from '../Componets/BgImage';
 import {Heading,  TextFour} from '../Componets/HeadingText';
 import BtnsCard from '../Componets/Btns';
 import { InputFiled, InputFieldsPassword } from '../Componets/InputFields';
-import axios from 'axios';
 
 const Singup = ({ navigation }) => {
   const [name, setName] = useState('');
@@ -79,25 +78,34 @@ const Singup = ({ navigation }) => {
     }
   }
  
-  const handlePostData = () => {
-    
-    const data = {
+  const handlePostData = async () => {
+    try {
+      await sendFormData();
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  const sendFormData = async () => {
+    const requestBody = {
       name: name,
       email: email,
       number: number,
       password: password,
       confirmPassword: confirmPassword
     };
-  
-    axios.post('https://jsonplaceholder.typicode.com/posts', data)
-      .then(response => {
-        // Handle the API response
-        console.log(response.data);
-      })
-      .catch(error => {
-        // Handle any errors
-        console.error('Error:', error);
-      });
+
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(requestBody)
+    });
+
+    const data = await response.json();
+    console.log(data);
+    // Handle the API response
   };
   
 
@@ -120,35 +128,35 @@ const Singup = ({ navigation }) => {
           <InputFiled
             placeholder="Your Name"
             value={name}
-        onChangeText={handlenameChange}
+        onChangeText={text => handlenameChange(text)}
             keyboardType='default'
             placeholderTextColor='black'
           />
           <InputFiled
             placeholder="Your Email"
             value={email}
-            onChangeText={handleEmailChange}
+            onChangeText={text => handleEmailChange(text)}
             keyboardType='email-address'
             placeholderTextColor='black'
           />
           <InputFiled
             placeholder="Your Number"
             value={number}
-            onChangeText={handleNumberChange}
+            onChangeText={text => handleNumberChange(text)}
             keyboardType='numeric'
             placeholderTextColor='black'
           />
           <InputFieldsPassword
             placeholder="New password"
             value={password}
-            onChangeText={handlePasswordChange}
+            onChangeText={text => handlePasswordChange(text)}
             placeholderTextColor='black'
             secureTextEntry={true}
           />
           <InputFieldsPassword
             placeholder="confirm password"
             value={confirmPassword}
-            onChangeText={handleconfirmPasswordChange}
+            onChangeText={text => handleconfirmPasswordChange(text)}
             placeholderTextColor='black'
             secureTextEntry={true}
           />
