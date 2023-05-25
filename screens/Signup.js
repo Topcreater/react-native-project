@@ -78,35 +78,35 @@ const Singup = ({ navigation }) => {
     }
   }
  
-  const handlePostData = async () => {
-    try {
-      await sendFormData();
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };
+  // const handlePostData = async () => {
+  //   try {
+  //     await sendFormData();
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+  // };
 
-  const sendFormData = async () => {
-    const requestBody = {
-      name: name,
-      email: email,
-      number: number,
-      password: password,
-      confirmPassword: confirmPassword
-    };
+  // const sendFormData = async () => {
+  //   const requestBody = {
+  //     name: name,
+  //     email: email,
+  //     number: number,
+  //     password: password,
+  //     confirmPassword: confirmPassword
+  //   };
 
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(requestBody)
-    });
+  //   const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(requestBody)
+  //   });
 
-    const data = await response.json();
-    console.log(data);
-    // Handle the API response
-  };
+  //   const data = await response.json();
+  //   console.log(data);
+  //   // Handle the API response
+  // };
   
 
   const functionCombined = () => {
