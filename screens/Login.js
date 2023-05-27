@@ -33,7 +33,7 @@ const LogIn = ({ navigation }) => {
   }
   const handleSubmit = () => {
     if (isValid) {
-      alert('Your form have been submited');
+      // alert('Your form have been submited');
       setEmail('');
       setPassword('');
     } else {
@@ -62,7 +62,7 @@ const LogIn = ({ navigation }) => {
         <InputFiled
           placeholder="Email"
           value={email}
-          onChangeText={handleEmailChange}
+          onChangeText={text => handleEmailChange(text)}
           keyboardType='email-address'
           placeholderTextColor='black'
         />

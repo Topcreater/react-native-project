@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, StyleSheet, Button } from 'react-native';
+import { View, Text, FlatList, StyleSheet, Button,Modal } from 'react-native';
+import { InputFiled, InputFieldsPassword } from '../Componets/InputFields';
 import BtnsCard from '../Componets/Btns';
 const Getdata = () => {
+ 
+  const [showModal, setShowModal] = useState(false);
+  const [slectedUser, setSlectedUser] = useState(undefined);
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -19,8 +23,7 @@ const Getdata = () => {
   };
 
   const deleteUser = async (id) => {
-    // const url = 'https://jsonplaceholder.typicode.com/posts';
-    // console.warn(`${url}/${id}`);
+   
     try {
 
       const url = 'https://jsonplaceholder.typicode.com/posts';
@@ -36,6 +39,11 @@ const Getdata = () => {
       console.error('Error:', error);
     }
   }
+const handleUdateData = (data)=>{
+  setShowModal(true)
+  setSlectedUser(data)
+}
+
   const renderItem = ({ item }) => (
     <View style={{ flex: 1, padding: 10, }}>
       <Text style={styles.id}>{item.id}</Text>
@@ -43,11 +51,56 @@ const Getdata = () => {
       <Text style={styles.body} >{item.body}</Text>
       <BtnsCard Btns="delete" onPress={() => deleteUser(item.id)}
       />
-      <BtnsCard Btns="Update"
+      <BtnsCard Btns="Update" onPress={() => handleUdateData(item)}
       />
     </View>
   );
+  <Modal visible={showModal} transparent={true}>
+ <UserModal setShowModal={setShowModal} slectedUser={slectedUser} />
+</Modal>
+const UserModal = (props)=>{
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [number, setNumber] = useState('');
 
+  useEffect(() => {
+    if (props.setSlectedUser) {
+      setName(props.setSlectedUser.name);
+      setEmail(props.setSlectedUser.email);
+      setNumber(props.setSlectedUser.number.toString());
+
+    }
+  }, []);
+return(
+  <View style={styles.modalView}>
+  <View style={styles.modalView2}>
+  <InputFiled
+          placeholder="Your Name"
+          value={name}
+      onChangeText={text => setName(text)}
+          keyboardType='default'
+          placeholderTextColor='black'
+        />
+        <InputFiled
+          placeholder="Your Email"
+          value={email}
+          onChangeText={text => setEmail(text)}
+          keyboardType='email-address'
+          placeholderTextColor='black'
+        />
+        <InputFiled
+          placeholder="Your Number"
+          value={number}
+          onChangeText={text => setNumber(text)}
+          keyboardType='numeric'
+          placeholderTextColor='black'
+        />
+        <BtnsCard Btns="Submit" onPress={() => handleUdateData}
+    />
+  </View>
+</View>
+)
+}
 
   return (
     <View>
@@ -56,6 +109,7 @@ const Getdata = () => {
         data={data}
         renderItem={renderItem}
       />
+
     </View>
   );
 
@@ -90,6 +144,18 @@ const styles = StyleSheet.create({
     padding: 15,
     backgroundColor: `#2c2b3f`,
     color: 'white',
+  },
+  modalView:{
+    alignItems:'center',
+flex:1,
+justifyContent:'center'
+  },
+  modalView2:{
+    backgroundColor: 'black',
+padding: 20,
+borderRadius:30,
+shadowColor:`#2c2b3f`,
+shadowOpacity:0.50
   }
 })
 export default Getdata;
