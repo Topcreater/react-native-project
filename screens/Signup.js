@@ -113,7 +113,7 @@ const Singup = ({ navigation }) => {
     handleSubmit();
     validatePasswords();
     paymentValid();
-    handlePostData();
+    // handlePostData();
   }
 
   return (
