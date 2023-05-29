@@ -29,6 +29,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
           onChangeText={props.onChangeText}
           keyboardType={props.keyboardType}
           secureTextEntry={props.secureTextEntry}
+          maxLength={props.maxLength}
           style={styles.input1}></TextInput>
         </View>
     )

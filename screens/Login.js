@@ -72,6 +72,7 @@ const LogIn = ({ navigation }) => {
           onChangeText={handlePasswordChange}
           placeholderTextColor='black'
           secureTextEntry={true}
+          keyboardType='numeric'
         />
 
         <TouchableOpacity onPress={() =>

@@ -1,63 +1,68 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, StyleSheet, Button,Modal } from 'react-native';
+import { View, Text, FlatList, StyleSheet, Button, Modal, ScrollView } from 'react-native';
 import { InputFiled, InputFieldsPassword } from '../Componets/InputFields';
 import BtnsCard from '../Componets/Btns';
+import { BgImage } from '../Componets/BgImage';
+import firbase from '../firebase/firebaseconection';
 const Getdata = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetchData
-  }, []);
-  const fetchData = async () => {
-    const url = 'https://jsonplaceholder.typicode.com/posts/1/comments'
-      const response = await fetch(url);
-      const jsonData = await response.json();
-      setData(jsonData);
-    
-  };
 
 
-  const deleteUser = async (id) => {
-      const url = 'https://jsonplaceholder.typicode.com/posts/1/comments';
-      let result = await fetch(`${url}/${id}`, {
-        method: 'DELETE'
-       
-      });
-
-      
-      result = await result.json();
-      
-      if (result) {
-        console.warn("User deleted");
-        fetchData
+  this.state={
+    name:"",
+    phone:0,
+    age:0,
+  }
+ 
+  InsertItem=()=>{
+    firbase.database().ref("users/"+ this.state.phone).set(
+      {
+fname:this.state.name,
+age:this.state.age,
       }
+    )
   }
 
-
-  const renderItem = ({ item }) => (
-    <View style={{ flex: 1, padding: 10, }}>
-      <Text style={styles.id}>{item.name}</Text>
-      <Text style={styles.title}>{item.email}</Text>
-      <Text style={styles.body} >{item.body}</Text>
-      <BtnsCard Btns="delete" onPress={() => deleteUser(item.id)}
-      />
-      <BtnsCard Btns="Update" 
-      />
-    </View>
-  );
   return (
     <View>
-      <Text style={{ fontSize: 30, textAlign: 'center' }}>Data about My app</Text>
-      <FlatList
-        data={data}
-        renderItem={renderItem}
-      />
-
+      <BgImage />
+      <Text style={styles.crud}>CRUD APP</Text>
+      <ScrollView>
+        <InputFiled
+          placeholder="Your Name"
+          //     value={name}
+          // onChangeText={text => handlenameChange(text)}
+          keyboardType='default'
+        />
+        <InputFiled
+          placeholder="Your Number"
+          // value={number}
+          // onChangeText={text => handleNumberChange(text)}
+          keyboardType='numeric'
+          maxLength={10}
+        />
+        <InputFiled
+          placeholder="Your age"
+          // value={number}
+          // onChangeText={text => handleNumberChange(text)}
+          keyboardType='numeric'
+        />
+         <BtnsCard Btns="Insert" 
+          />
+      </ScrollView>
     </View>
   );
 
-  }
+}
 
 const styles = StyleSheet.create({
+  crud: {
+    fontSize: 30,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    color: 'white',
+    margin: 30,
+
+  },
   title: {
     fontSize: 20,
     padding: 10,
@@ -82,17 +87,17 @@ const styles = StyleSheet.create({
     backgroundColor: `#2c2b3f`,
     color: 'white',
   },
-  modalView:{
-    alignItems:'center',
-flex:1,
-justifyContent:'center'
+  modalView: {
+    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center'
   },
-  modalView2:{
+  modalView2: {
     backgroundColor: 'black',
-padding: 20,
-borderRadius:30,
-shadowColor:`#2c2b3f`,
-shadowOpacity:0.50
+    padding: 20,
+    borderRadius: 30,
+    shadowColor: `#2c2b3f`,
+    shadowOpacity: 0.50
   }
 })
 export default Getdata;
