@@ -4,6 +4,7 @@ import {
   TouchableOpacity,
   ScrollView,
   Text,
+  StyleSheet,
 } from 'react-native';
 import auth from '@react-native-firebase/auth';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
@@ -14,19 +15,29 @@ import { InputFiled, InputFieldsPassword } from '../Componets/InputFields';
 const LogIn = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [massage, setMassage] = useState('');
- 
+  const [message, setMessage] = useState('');
+  const [name, setName] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 const handleLogin = async()=>{
+  if (password !== confirmPassword) {
+    alert('passowrd not matched');
+    return;
+  }
   try {
     const userCreated = await auth().createUserWithEmailAndPassword(email,
-      password,);
+      password, name, confirmPassword);
       console.log(userCreated);
+      setEmail("");
   } catch (error) {
     console.log(error);
-    setMassage(error.massage);
-  }
-}
 
+    setMessage(error.message);
+  }
+};
+let errorText = null;
+if (message) {
+  errorText = <Text>Error: {message}</Text>;
+}
   return (
 
     <View>
@@ -36,6 +47,13 @@ const handleLogin = async()=>{
           textData="Login Here!"
           textData2="Welcome back Join your account"
         />
+          <InputFiled
+            placeholder="Your Name"
+            value={name}
+        onChangeText={text => setName(text)}
+            keyboardType='default'
+            placeholderTextColor='black'
+          />
         <InputFiled
           placeholder="Email"
           value={email}
@@ -49,9 +67,18 @@ const handleLogin = async()=>{
           onChangeText={text => setPassword(text)}
           placeholderTextColor='black'
           secureTextEntry={true}
-          keyboardType='numeric'
+          // keyboardType='numeric'
         />
-
+         <InputFieldsPassword
+            placeholder="confirm password"
+            value={confirmPassword}
+            onChangeText={text => setConfirmPassword(text)}
+            placeholderTextColor='black'
+            secureTextEntry={true}
+          />
+        <View style={styles.message}>
+        {errorText}
+</View>
         <TouchableOpacity onPress={() =>
           navigation.navigate('Forgot page')
         }>
@@ -63,7 +90,6 @@ const handleLogin = async()=>{
           navigation.navigate('SignUp page')
         }
         />
-        <Text>{massage}</Text>
       </ScrollView>
 
     </View>
@@ -71,7 +97,17 @@ const handleLogin = async()=>{
 
   );
 }
-
+const styles = StyleSheet.create({
+message:{
+  fontSize: 15,
+  textAlign: 'center',
+  fontWeight: 'bold',
+  color: 'red',
+  // backgroundColor: 'red',
+  padding:20,
+  borderRadius:20
+}
+})
 
 export default LogIn;
 
