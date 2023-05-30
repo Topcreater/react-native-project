@@ -3,24 +3,26 @@ import { View, Text, FlatList, StyleSheet, Button, Modal, ScrollView } from 'rea
 import { InputFiled, InputFieldsPassword } from '../Componets/InputFields';
 import BtnsCard from '../Componets/Btns';
 import { BgImage } from '../Componets/BgImage';
-import firbase from '../firebase/firebaseconection';
+import firestore from '@react-native-firebase/firestore';
 const Getdata = () => {
+const [myData, setMyData] = useState("");
+  useEffect(() => {
+    getdatabase();
+
+  }, []);
+
+  const getdatabase = async () => {
+    try {
+      const data = await firestore().collection('testing').doc('QvQNJIVBvPyj0ZRn74B4').get();
+   console.log(data._data);
+   setMyData(data._data);
+    } 
+    catch (error) {
+      console.log(error);
+    }
+  }
 
 
-  this.state={
-    name:"",
-    phone:0,
-    age:0,
-  }
- 
-  InsertItem=()=>{
-    firbase.database().ref("users/"+ this.state.phone).set(
-      {
-fname:this.state.name,
-age:this.state.age,
-      }
-    )
-  }
 
   return (
     <View>
@@ -46,8 +48,11 @@ age:this.state.age,
           // onChangeText={text => handleNumberChange(text)}
           keyboardType='numeric'
         />
-         <BtnsCard Btns="Insert" 
-          />
+        <BtnsCard Btns="Insert"
+        />
+        <Text>Name:-{myData ? myData.name : 'loding...'}</Text>
+        <Text>age:-{myData ? myData.age : 'loding...'}</Text>
+        <Text>Hobby:-{myData ? myData.hobby.map(list => ` ${list}`) : 'loding...'}</Text>
       </ScrollView>
     </View>
   );

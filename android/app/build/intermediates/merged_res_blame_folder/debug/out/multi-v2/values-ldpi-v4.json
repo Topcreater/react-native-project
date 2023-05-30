@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.awesomeproject.app-mergeDebugResources-85:/values-ldpi-v4/values-ldpi-v4.xml",
+            "outputFile": "com.awesomeproject.app-mergeDebugResources-88:/values-ldpi-v4/values-ldpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ard\\.gradle\\caches\\transforms-3\\2b01f7e10f0225a7a23591b68d5ca29c\\transformed\\jetified-payments-core-20.25.2\\res\\values-ldpi-v4\\values-ldpi-v4.xml",
+                    "source": "C:\\Users\\ard\\.gradle\\caches\\transforms-3\\9d86af7f164aa162fa07e239271f40cb\\transformed\\jetified-payments-core-20.25.3\\res\\values-ldpi-v4\\values-ldpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

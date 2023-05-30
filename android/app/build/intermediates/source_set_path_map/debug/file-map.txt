@@ -1,94 +1,99 @@
-com.awesomeproject.app-jetified-foundation-layout-1.4.3-0 C:\Users\ard\.gradle\caches\transforms-3\095f7b23cd95c7f23e8118fa1092a445\transformed\jetified-foundation-layout-1.4.3\res
-com.awesomeproject.app-jetified-ui-tooling-preview-1.4.3-1 C:\Users\ard\.gradle\caches\transforms-3\09bc796ea86bfe08398f82c61b67f510\transformed\jetified-ui-tooling-preview-1.4.3\res
-com.awesomeproject.app-core-1.9.0-2 C:\Users\ard\.gradle\caches\transforms-3\0e6853a40e5f355179ac35160c6e4dee\transformed\core-1.9.0\res
-com.awesomeproject.app-jetified-play-services-wallet-19.2.0-beta01-3 C:\Users\ard\.gradle\caches\transforms-3\1510b2e5bb9ef1c224fa80531a13a56f\transformed\jetified-play-services-wallet-19.2.0-beta01\res
-com.awesomeproject.app-core-runtime-2.2.0-4 C:\Users\ard\.gradle\caches\transforms-3\159e0a4f6911ca52ec2b192b22bf3170\transformed\core-runtime-2.2.0\res
-com.awesomeproject.app-jetified-runtime-1.4.3-5 C:\Users\ard\.gradle\caches\transforms-3\172865d4b2ba99bbc314ab148ffbb921\transformed\jetified-runtime-1.4.3\res
-com.awesomeproject.app-jetified-flipper-0.125.0-6 C:\Users\ard\.gradle\caches\transforms-3\1de5dee59d1627955e42d3d6205f726e\transformed\jetified-flipper-0.125.0\res
-com.awesomeproject.app-jetified-react-android-0.71.8-debug-7 C:\Users\ard\.gradle\caches\transforms-3\22566865d31ef74cdd0cb020b75ed98d\transformed\jetified-react-android-0.71.8-debug\res
-com.awesomeproject.app-jetified-payments-model-20.25.2-8 C:\Users\ard\.gradle\caches\transforms-3\262443033eb399fe7f8d937c918bfca7\transformed\jetified-payments-model-20.25.2\res
-com.awesomeproject.app-jetified-profileinstaller-1.3.0-9 C:\Users\ard\.gradle\caches\transforms-3\29985f0df3b4d44d717d2e71aaba6f47\transformed\jetified-profileinstaller-1.3.0\res
-com.awesomeproject.app-jetified-payments-core-20.25.2-10 C:\Users\ard\.gradle\caches\transforms-3\2b01f7e10f0225a7a23591b68d5ca29c\transformed\jetified-payments-core-20.25.2\res
-com.awesomeproject.app-jetified-ui-1.4.3-11 C:\Users\ard\.gradle\caches\transforms-3\2c020b6a85635e290b58b4a993fc9a13\transformed\jetified-ui-1.4.3\res
-com.awesomeproject.app-jetified-security-crypto-1.1.0-alpha05-12 C:\Users\ard\.gradle\caches\transforms-3\2d27a24e6adeab2fa0ef1147ad089aaa\transformed\jetified-security-crypto-1.1.0-alpha05\res
-com.awesomeproject.app-jetified-autofill-1.1.0-13 C:\Users\ard\.gradle\caches\transforms-3\305b398eafd13a2f85fecdd51619bbe3\transformed\jetified-autofill-1.1.0\res
-com.awesomeproject.app-jetified-emoji2-views-helper-1.3.0-14 C:\Users\ard\.gradle\caches\transforms-3\30bb3b9bc1a63b512608886df3830b95\transformed\jetified-emoji2-views-helper-1.3.0\res
-com.awesomeproject.app-jetified-stripe-ui-core-20.25.2-15 C:\Users\ard\.gradle\caches\transforms-3\330afe45d8c61591b8a5225f2c183fcf\transformed\jetified-stripe-ui-core-20.25.2\res
-com.awesomeproject.app-jetified-material-1.4.3-16 C:\Users\ard\.gradle\caches\transforms-3\367b8b2ef1636da685bc37ec404502a8\transformed\jetified-material-1.4.3\res
-com.awesomeproject.app-lifecycle-runtime-2.6.1-17 C:\Users\ard\.gradle\caches\transforms-3\39fb80cab20376db801da790ae2551bc\transformed\lifecycle-runtime-2.6.1\res
-com.awesomeproject.app-jetified-play-services-base-18.0.1-18 C:\Users\ard\.gradle\caches\transforms-3\4f703550170bfa754497acecfa6ac4ec\transformed\jetified-play-services-base-18.0.1\res
-com.awesomeproject.app-jetified-annotation-experimental-1.3.0-19 C:\Users\ard\.gradle\caches\transforms-3\4fc99b3a7748ee8099500ce35b1f9c93\transformed\jetified-annotation-experimental-1.3.0\res
-com.awesomeproject.app-jetified-paymentsheet-20.25.2-20 C:\Users\ard\.gradle\caches\transforms-3\5455ca777b7df60c04ea3a483efb82f2\transformed\jetified-paymentsheet-20.25.2\res
-com.awesomeproject.app-jetified-lifecycle-process-2.6.1-21 C:\Users\ard\.gradle\caches\transforms-3\56127c03caba64ac1189053909477acc\transformed\jetified-lifecycle-process-2.6.1\res
-com.awesomeproject.app-jetified-ui-util-1.4.3-22 C:\Users\ard\.gradle\caches\transforms-3\58ed4869213a1f50031bc3b5bdb3525d\transformed\jetified-ui-util-1.4.3\res
-com.awesomeproject.app-jetified-activity-compose-1.7.0-23 C:\Users\ard\.gradle\caches\transforms-3\5cd0dc8661ba99b01cff95112d89e587\transformed\jetified-activity-compose-1.7.0\res
-com.awesomeproject.app-jetified-activity-ktx-1.7.0-24 C:\Users\ard\.gradle\caches\transforms-3\5f0d8772781863eedf18ddac194b6425\transformed\jetified-activity-ktx-1.7.0\res
-com.awesomeproject.app-jetified-material-icons-core-1.4.3-25 C:\Users\ard\.gradle\caches\transforms-3\6109b3ab1d4270db5a33b72b3a34f7d2\transformed\jetified-material-icons-core-1.4.3\res
-com.awesomeproject.app-navigation-runtime-2.5.3-26 C:\Users\ard\.gradle\caches\transforms-3\6351d570c218a8ac2a3f10cd676ebe3a\transformed\navigation-runtime-2.5.3\res
-com.awesomeproject.app-jetified-stripe-3ds2-android-6.1.7-27 C:\Users\ard\.gradle\caches\transforms-3\64fc0743870084a073aa9ea92531796b\transformed\jetified-stripe-3ds2-android-6.1.7\res
-com.awesomeproject.app-jetified-ui-viewbinding-1.4.3-28 C:\Users\ard\.gradle\caches\transforms-3\66d181e6fea44d3bfbb81c94fcb5c1fd\transformed\jetified-ui-viewbinding-1.4.3\res
-com.awesomeproject.app-jetified-foundation-1.4.3-29 C:\Users\ard\.gradle\caches\transforms-3\6b7b55d9cabe7519e9afaa3ebbbafd0f\transformed\jetified-foundation-1.4.3\res
-com.awesomeproject.app-jetified-glide-4.12.0-30 C:\Users\ard\.gradle\caches\transforms-3\6cc4178e5ec5542882659939070f6260\transformed\jetified-glide-4.12.0\res
-com.awesomeproject.app-lifecycle-livedata-core-2.6.1-31 C:\Users\ard\.gradle\caches\transforms-3\6e825119c62134de6b46b64014b66972\transformed\lifecycle-livedata-core-2.6.1\res
-com.awesomeproject.app-lifecycle-viewmodel-2.6.1-32 C:\Users\ard\.gradle\caches\transforms-3\776bd7506083e4e9ef9993c3d40ca9bd\transformed\lifecycle-viewmodel-2.6.1\res
-com.awesomeproject.app-jetified-activity-1.7.0-33 C:\Users\ard\.gradle\caches\transforms-3\78403927826fb7057805af823e059e4a\transformed\jetified-activity-1.7.0\res
-com.awesomeproject.app-jetified-viewpager2-1.0.0-34 C:\Users\ard\.gradle\caches\transforms-3\7b19121545223a5719f58d9c1062612b\transformed\jetified-viewpager2-1.0.0\res
-com.awesomeproject.app-jetified-material-ripple-1.4.3-35 C:\Users\ard\.gradle\caches\transforms-3\7bc0faddb48b9af7ede78d0c14d7eeb7\transformed\jetified-material-ripple-1.4.3\res
-com.awesomeproject.app-navigation-common-ktx-2.5.3-36 C:\Users\ard\.gradle\caches\transforms-3\7bfd61e0e97f38dff357024c44263d4f\transformed\navigation-common-ktx-2.5.3\res
-com.awesomeproject.app-jetified-stripe-core-20.25.2-37 C:\Users\ard\.gradle\caches\transforms-3\7de267ce0f5bf9116db7c11287808b69\transformed\jetified-stripe-core-20.25.2\res
-com.awesomeproject.app-jetified-startup-runtime-1.1.1-38 C:\Users\ard\.gradle\caches\transforms-3\8636daed2f62b77a1888ede5dfd6f498\transformed\jetified-startup-runtime-1.1.1\res
-com.awesomeproject.app-jetified-play-services-basement-18.0.0-39 C:\Users\ard\.gradle\caches\transforms-3\88e71071474df70f59a579fca9732c5c\transformed\jetified-play-services-basement-18.0.0\res
-com.awesomeproject.app-browser-1.5.0-40 C:\Users\ard\.gradle\caches\transforms-3\8cab59484e4624f99ff4aa0c658d57a3\transformed\browser-1.5.0\res
-com.awesomeproject.app-media-1.0.0-41 C:\Users\ard\.gradle\caches\transforms-3\9437a30f0fdf36db3a854a08b7429039\transformed\media-1.0.0\res
-com.awesomeproject.app-jetified-runtime-saveable-1.4.3-42 C:\Users\ard\.gradle\caches\transforms-3\992a36d3b9980f25f12dc09471d0b1fd\transformed\jetified-runtime-saveable-1.4.3\res
-com.awesomeproject.app-jetified-lifecycle-viewmodel-compose-2.6.1-43 C:\Users\ard\.gradle\caches\transforms-3\9db1031dadf370ef3dc0587543089fd4\transformed\jetified-lifecycle-viewmodel-compose-2.6.1\res
-com.awesomeproject.app-lifecycle-livedata-2.6.1-44 C:\Users\ard\.gradle\caches\transforms-3\9e6cbf2fdbabe98a92ebcbe788d0bbf6\transformed\lifecycle-livedata-2.6.1\res
-com.awesomeproject.app-navigation-runtime-ktx-2.5.3-45 C:\Users\ard\.gradle\caches\transforms-3\a1b959c7b8ea342cac8feed693138a34\transformed\navigation-runtime-ktx-2.5.3\res
-com.awesomeproject.app-jetified-ui-geometry-1.4.3-46 C:\Users\ard\.gradle\caches\transforms-3\a37bc193f9f25635184970341e6d31b7\transformed\jetified-ui-geometry-1.4.3\res
-com.awesomeproject.app-jetified-savedstate-1.2.1-47 C:\Users\ard\.gradle\caches\transforms-3\a3924d461a45eb5fb94adcb9c5b88344\transformed\jetified-savedstate-1.2.1\res
-com.awesomeproject.app-jetified-lifecycle-livedata-ktx-2.6.1-48 C:\Users\ard\.gradle\caches\transforms-3\a3e9281027a5e5248c44df7c867c401d\transformed\jetified-lifecycle-livedata-ktx-2.6.1\res
-com.awesomeproject.app-jetified-customview-poolingcontainer-1.0.0-49 C:\Users\ard\.gradle\caches\transforms-3\a96ab7e6a47759877a146492cb66b8f0\transformed\jetified-customview-poolingcontainer-1.0.0\res
-com.awesomeproject.app-jetified-ui-text-1.4.3-50 C:\Users\ard\.gradle\caches\transforms-3\aaac5536b769f8c9ce85a6f7a07fa564\transformed\jetified-ui-text-1.4.3\res
-com.awesomeproject.app-jetified-payments-ui-core-20.25.2-51 C:\Users\ard\.gradle\caches\transforms-3\ad5063eacb9acb3b296a616dd82b6613\transformed\jetified-payments-ui-core-20.25.2\res
-com.awesomeproject.app-jetified-savedstate-ktx-1.2.1-52 C:\Users\ard\.gradle\caches\transforms-3\b4f4e7e783dad26bc67f71daffb10fc3\transformed\jetified-savedstate-ktx-1.2.1\res
-com.awesomeproject.app-jetified-play-services-maps-18.0.2-53 C:\Users\ard\.gradle\caches\transforms-3\cb51dd71c8a226eb9d6f62630c536387\transformed\jetified-play-services-maps-18.0.2\res
-com.awesomeproject.app-jetified-lifecycle-viewmodel-ktx-2.6.1-54 C:\Users\ard\.gradle\caches\transforms-3\cdc963bd1e989bd618ff2f0aaf05cc8d\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\res
-com.awesomeproject.app-material-1.8.0-55 C:\Users\ard\.gradle\caches\transforms-3\cea0c55226e090ec7367b56baf3858b9\transformed\material-1.8.0\res
-com.awesomeproject.app-jetified-navigation-compose-2.5.3-56 C:\Users\ard\.gradle\caches\transforms-3\cfe7c89eaa4302dea8216e3fa2a140a5\transformed\jetified-navigation-compose-2.5.3\res
-com.awesomeproject.app-fragment-1.5.5-57 C:\Users\ard\.gradle\caches\transforms-3\d009321aaa1869c85a6f5d4535c7d878\transformed\fragment-1.5.5\res
-com.awesomeproject.app-jetified-tracing-1.1.0-58 C:\Users\ard\.gradle\caches\transforms-3\d11b6876e6eb8c85795979da7f2458f5\transformed\jetified-tracing-1.1.0\res
-com.awesomeproject.app-jetified-appcompat-resources-1.6.1-59 C:\Users\ard\.gradle\caches\transforms-3\d3da07ebc88121a7977a8d2c687905f2\transformed\jetified-appcompat-resources-1.6.1\res
-com.awesomeproject.app-navigation-common-2.5.3-60 C:\Users\ard\.gradle\caches\transforms-3\d543994c6898080853747f4e16a767a1\transformed\navigation-common-2.5.3\res
-com.awesomeproject.app-jetified-animation-1.3.1-61 C:\Users\ard\.gradle\caches\transforms-3\d62478d57042cf244c641e5067829c1f\transformed\jetified-animation-1.3.1\res
-com.awesomeproject.app-jetified-lifecycle-runtime-ktx-2.6.1-62 C:\Users\ard\.gradle\caches\transforms-3\d92f8fb47ea0832098f68beaa24b82a7\transformed\jetified-lifecycle-runtime-ktx-2.6.1\res
-com.awesomeproject.app-constraintlayout-2.1.4-63 C:\Users\ard\.gradle\caches\transforms-3\dac4d5e6f4db4a5ec5206cf4c6a48c74\transformed\constraintlayout-2.1.4\res
-com.awesomeproject.app-recyclerview-1.2.1-64 C:\Users\ard\.gradle\caches\transforms-3\dd81a59df7b38e2dc531d42c65d1cb8b\transformed\recyclerview-1.2.1\res
-com.awesomeproject.app-cardview-1.0.0-65 C:\Users\ard\.gradle\caches\transforms-3\de52fc3fb23578f02940ffac44877ce3\transformed\cardview-1.0.0\res
-com.awesomeproject.app-jetified-fragment-ktx-1.5.5-66 C:\Users\ard\.gradle\caches\transforms-3\e2567b9713754d203619aa1c34731b3a\transformed\jetified-fragment-ktx-1.5.5\res
-com.awesomeproject.app-transition-1.2.0-67 C:\Users\ard\.gradle\caches\transforms-3\e32d4ee004e5151cc8aea47297e5af35\transformed\transition-1.2.0\res
-com.awesomeproject.app-jetified-lifecycle-livedata-core-ktx-2.6.1-68 C:\Users\ard\.gradle\caches\transforms-3\e3cc90e32116aa734f372c2dccca3e3e\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\res
-com.awesomeproject.app-jetified-runtime-livedata-1.4.3-69 C:\Users\ard\.gradle\caches\transforms-3\e3f87ecbdbc02dd124d159bd70c9a43b\transformed\jetified-runtime-livedata-1.4.3\res
-com.awesomeproject.app-jetified-animation-core-1.3.1-70 C:\Users\ard\.gradle\caches\transforms-3\e70a3e45022e086be2479c78875f751f\transformed\jetified-animation-core-1.3.1\res
-com.awesomeproject.app-appcompat-1.6.1-71 C:\Users\ard\.gradle\caches\transforms-3\e7a13cdad2590aa9422e09640675dac7\transformed\appcompat-1.6.1\res
-com.awesomeproject.app-jetified-core-ktx-1.9.0-72 C:\Users\ard\.gradle\caches\transforms-3\ecccc2fd9b5e0f9123e1ab08bd6f1b8d\transformed\jetified-core-ktx-1.9.0\res
-com.awesomeproject.app-jetified-ui-unit-1.4.3-73 C:\Users\ard\.gradle\caches\transforms-3\ecf026476eb5b1646372a03bffeb2b38\transformed\jetified-ui-unit-1.4.3\res
-com.awesomeproject.app-jetified-ui-graphics-1.4.3-74 C:\Users\ard\.gradle\caches\transforms-3\ef3c0a61a5e3519d9a7ee3a9a22e9cd9\transformed\jetified-ui-graphics-1.4.3\res
-com.awesomeproject.app-jetified-drawee-2.6.0-75 C:\Users\ard\.gradle\caches\transforms-3\f4a65ce6ec58fd6d97bcb819934dfdd7\transformed\jetified-drawee-2.6.0\res
-com.awesomeproject.app-drawerlayout-1.1.1-76 C:\Users\ard\.gradle\caches\transforms-3\f61066e4767be842a6f285672305e84d\transformed\drawerlayout-1.1.1\res
-com.awesomeproject.app-jetified-financial-connections-20.25.2-77 C:\Users\ard\.gradle\caches\transforms-3\fa10cb4cbdbc8983229653b0e521c781\transformed\jetified-financial-connections-20.25.2\res
-com.awesomeproject.app-jetified-link-20.25.2-78 C:\Users\ard\.gradle\caches\transforms-3\faa3af5bccd643e6f8b0d61f0ef80bd0\transformed\jetified-link-20.25.2\res
-com.awesomeproject.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-79 C:\Users\ard\.gradle\caches\transforms-3\fd284858fc268ceddb8a547e0c7f8875\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
-com.awesomeproject.app-jetified-emoji2-1.3.0-80 C:\Users\ard\.gradle\caches\transforms-3\fe8430385f709e9248c8895b135603a8\transformed\jetified-emoji2-1.3.0\res
-com.awesomeproject.app-coordinatorlayout-1.1.0-81 C:\Users\ard\.gradle\caches\transforms-3\ff8cf5244b1452ffe5becfa7e824ee68\transformed\coordinatorlayout-1.1.0\res
-com.awesomeproject.app-pngs-82 F:\react native project\secondProject\AwesomeProject\android\app\build\generated\res\pngs\debug
-com.awesomeproject.app-resValues-83 F:\react native project\secondProject\AwesomeProject\android\app\build\generated\res\resValues\debug
-com.awesomeproject.app-rs-84 F:\react native project\secondProject\AwesomeProject\android\app\build\generated\res\rs\debug
-com.awesomeproject.app-mergeDebugResources-85 F:\react native project\secondProject\AwesomeProject\android\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.awesomeproject.app-mergeDebugResources-86 F:\react native project\secondProject\AwesomeProject\android\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.awesomeproject.app-merged_res-87 F:\react native project\secondProject\AwesomeProject\android\app\build\intermediates\merged_res\debug
-com.awesomeproject.app-debug-88 F:\react native project\secondProject\AwesomeProject\android\app\src\debug\res
-com.awesomeproject.app-main-89 F:\react native project\secondProject\AwesomeProject\android\app\src\main\res
-com.awesomeproject.app-packaged_res-90 F:\react native project\secondProject\AwesomeProject\node_modules\@stripe\stripe-react-native\android\build\intermediates\packaged_res\debug
-com.awesomeproject.app-packaged_res-91 F:\react native project\secondProject\AwesomeProject\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
-com.awesomeproject.app-packaged_res-92 F:\react native project\secondProject\AwesomeProject\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
-com.awesomeproject.app-packaged_res-93 F:\react native project\secondProject\AwesomeProject\node_modules\react-native-splash-screen\android\build\intermediates\packaged_res\debug
+com.awesomeproject.app-jetified-activity-compose-1.7.0-0 C:\Users\ard\.gradle\caches\transforms-3\1213c74b264f6c3f58d1efc741f55372\transformed\jetified-activity-compose-1.7.0\res
+com.awesomeproject.app-jetified-ui-geometry-1.4.3-1 C:\Users\ard\.gradle\caches\transforms-3\16cad18e172216ba0891736bf52d125a\transformed\jetified-ui-geometry-1.4.3\res
+com.awesomeproject.app-jetified-stripe-core-20.25.3-2 C:\Users\ard\.gradle\caches\transforms-3\226998abf6eb53d0acc2bd4f765f0157\transformed\jetified-stripe-core-20.25.3\res
+com.awesomeproject.app-navigation-common-2.5.3-3 C:\Users\ard\.gradle\caches\transforms-3\23a052e864177bc39ee4facc52e2b760\transformed\navigation-common-2.5.3\res
+com.awesomeproject.app-media-1.0.0-4 C:\Users\ard\.gradle\caches\transforms-3\24c4c65e28702c6a065d00b298899670\transformed\media-1.0.0\res
+com.awesomeproject.app-browser-1.5.0-5 C:\Users\ard\.gradle\caches\transforms-3\2c0ca112602a00dc239cf96771ce7ec4\transformed\browser-1.5.0\res
+com.awesomeproject.app-jetified-fragment-ktx-1.5.5-6 C:\Users\ard\.gradle\caches\transforms-3\2e5d2ebc7001e0f0c2932e8cc17dc15c\transformed\jetified-fragment-ktx-1.5.5\res
+com.awesomeproject.app-jetified-ui-1.4.3-7 C:\Users\ard\.gradle\caches\transforms-3\2ecfc30527f818679a81ac41f1d4d01c\transformed\jetified-ui-1.4.3\res
+com.awesomeproject.app-lifecycle-runtime-2.6.1-8 C:\Users\ard\.gradle\caches\transforms-3\303f06a7c34b3cbc56ce6e31bedea652\transformed\lifecycle-runtime-2.6.1\res
+com.awesomeproject.app-jetified-savedstate-1.2.1-9 C:\Users\ard\.gradle\caches\transforms-3\316e9a14525dda7ae5eff2b0320fc6e6\transformed\jetified-savedstate-1.2.1\res
+com.awesomeproject.app-jetified-lifecycle-viewmodel-compose-2.6.1-10 C:\Users\ard\.gradle\caches\transforms-3\33d5de2e26fb053f55a1982b2bbca4cd\transformed\jetified-lifecycle-viewmodel-compose-2.6.1\res
+com.awesomeproject.app-jetified-runtime-livedata-1.4.3-11 C:\Users\ard\.gradle\caches\transforms-3\3413ff0bd86f89c91bdd534820eeaeae\transformed\jetified-runtime-livedata-1.4.3\res
+com.awesomeproject.app-jetified-financial-connections-20.25.3-12 C:\Users\ard\.gradle\caches\transforms-3\3cb4f67e4c79add96bbccab02b4e6286\transformed\jetified-financial-connections-20.25.3\res
+com.awesomeproject.app-drawerlayout-1.1.1-13 C:\Users\ard\.gradle\caches\transforms-3\3e3b4527be6b31b0cdc1cd25e7388682\transformed\drawerlayout-1.1.1\res
+com.awesomeproject.app-jetified-runtime-1.4.3-14 C:\Users\ard\.gradle\caches\transforms-3\3eb4ae565ad1df76ecf694fbd2a311e6\transformed\jetified-runtime-1.4.3\res
+com.awesomeproject.app-jetified-stripe-ui-core-20.25.3-15 C:\Users\ard\.gradle\caches\transforms-3\3eb51fa577de3e0bbcf10635801f7f37\transformed\jetified-stripe-ui-core-20.25.3\res
+com.awesomeproject.app-jetified-runtime-saveable-1.4.3-16 C:\Users\ard\.gradle\caches\transforms-3\3f521b999b47a375cb2e684f510afe34\transformed\jetified-runtime-saveable-1.4.3\res
+com.awesomeproject.app-jetified-viewpager2-1.0.0-17 C:\Users\ard\.gradle\caches\transforms-3\4274db2b0893cef9aa5c8ba8a874edc8\transformed\jetified-viewpager2-1.0.0\res
+com.awesomeproject.app-jetified-foundation-1.4.3-18 C:\Users\ard\.gradle\caches\transforms-3\48b3c6dce2e8108a2d67321af9976bc9\transformed\jetified-foundation-1.4.3\res
+com.awesomeproject.app-constraintlayout-2.1.4-19 C:\Users\ard\.gradle\caches\transforms-3\4c890c7f76877b67e99a439a9d45cfc1\transformed\constraintlayout-2.1.4\res
+com.awesomeproject.app-jetified-stripe-3ds2-android-6.1.7-20 C:\Users\ard\.gradle\caches\transforms-3\5083bdf342584876462799bbb37b470e\transformed\jetified-stripe-3ds2-android-6.1.7\res
+com.awesomeproject.app-jetified-tracing-1.1.0-21 C:\Users\ard\.gradle\caches\transforms-3\538bba3d6baace3ddadcc2b195a9cb20\transformed\jetified-tracing-1.1.0\res
+com.awesomeproject.app-jetified-ui-tooling-preview-1.4.3-22 C:\Users\ard\.gradle\caches\transforms-3\549c92df4a81ceb281f56ec1ce656d01\transformed\jetified-ui-tooling-preview-1.4.3\res
+com.awesomeproject.app-lifecycle-livedata-2.6.1-23 C:\Users\ard\.gradle\caches\transforms-3\54e452aad7a7deb7625bd9019b7d142c\transformed\lifecycle-livedata-2.6.1\res
+com.awesomeproject.app-jetified-profileinstaller-1.3.0-24 C:\Users\ard\.gradle\caches\transforms-3\5933a810b5935ce3b165b3e4ebbcf519\transformed\jetified-profileinstaller-1.3.0\res
+com.awesomeproject.app-jetified-lifecycle-process-2.6.1-25 C:\Users\ard\.gradle\caches\transforms-3\5c4e8a442c9dc208e5c723917c762577\transformed\jetified-lifecycle-process-2.6.1\res
+com.awesomeproject.app-jetified-material-ripple-1.4.3-26 C:\Users\ard\.gradle\caches\transforms-3\63148fcb107835c35290c597798d9638\transformed\jetified-material-ripple-1.4.3\res
+com.awesomeproject.app-core-1.9.0-27 C:\Users\ard\.gradle\caches\transforms-3\63820c7a9816b2d66497c2ab9364bdfe\transformed\core-1.9.0\res
+com.awesomeproject.app-jetified-play-services-basement-18.1.0-28 C:\Users\ard\.gradle\caches\transforms-3\6ebfe84b5eef36b9339c323a6e5f2a17\transformed\jetified-play-services-basement-18.1.0\res
+com.awesomeproject.app-jetified-firebase-common-20.3.2-29 C:\Users\ard\.gradle\caches\transforms-3\6ffef901857482cb1327e398ce90f0fa\transformed\jetified-firebase-common-20.3.2\res
+com.awesomeproject.app-jetified-glide-4.12.0-30 C:\Users\ard\.gradle\caches\transforms-3\730fd2a5346349e040340d023d91d4f8\transformed\jetified-glide-4.12.0\res
+com.awesomeproject.app-jetified-react-android-0.71.8-debug-31 C:\Users\ard\.gradle\caches\transforms-3\7325bf4a076c6e711c0c38433a1d8c5e\transformed\jetified-react-android-0.71.8-debug\res
+com.awesomeproject.app-jetified-material-1.4.3-32 C:\Users\ard\.gradle\caches\transforms-3\73fb985743826c568ca34df3f8015714\transformed\jetified-material-1.4.3\res
+com.awesomeproject.app-jetified-activity-1.7.0-33 C:\Users\ard\.gradle\caches\transforms-3\755b8f9d96467b6c5a4c5fb73f2aea57\transformed\jetified-activity-1.7.0\res
+com.awesomeproject.app-jetified-savedstate-ktx-1.2.1-34 C:\Users\ard\.gradle\caches\transforms-3\7791a4333070c833610cb82c789396ef\transformed\jetified-savedstate-ktx-1.2.1\res
+com.awesomeproject.app-jetified-foundation-layout-1.4.3-35 C:\Users\ard\.gradle\caches\transforms-3\79279da41ba1b513bdc260181faf4e6e\transformed\jetified-foundation-layout-1.4.3\res
+com.awesomeproject.app-coordinatorlayout-1.1.0-36 C:\Users\ard\.gradle\caches\transforms-3\7ac667f49817b2b448f2a04922038827\transformed\coordinatorlayout-1.1.0\res
+com.awesomeproject.app-jetified-customview-poolingcontainer-1.0.0-37 C:\Users\ard\.gradle\caches\transforms-3\7dcb3982c75bd8422b14cea479a3a56d\transformed\jetified-customview-poolingcontainer-1.0.0\res
+com.awesomeproject.app-core-runtime-2.2.0-38 C:\Users\ard\.gradle\caches\transforms-3\7f98022c76ee0661451ac42712b7c0d7\transformed\core-runtime-2.2.0\res
+com.awesomeproject.app-jetified-security-crypto-1.1.0-alpha05-39 C:\Users\ard\.gradle\caches\transforms-3\83b68d45833c5520067341aec602e522\transformed\jetified-security-crypto-1.1.0-alpha05\res
+com.awesomeproject.app-navigation-common-ktx-2.5.3-40 C:\Users\ard\.gradle\caches\transforms-3\85e0a729c169d24cdd4997b1d00bd441\transformed\navigation-common-ktx-2.5.3\res
+com.awesomeproject.app-jetified-autofill-1.1.0-41 C:\Users\ard\.gradle\caches\transforms-3\894d77f48513adc2b60d438289dc746e\transformed\jetified-autofill-1.1.0\res
+com.awesomeproject.app-recyclerview-1.2.1-42 C:\Users\ard\.gradle\caches\transforms-3\8b634f37ddfdce477a85cd7115df2e97\transformed\recyclerview-1.2.1\res
+com.awesomeproject.app-jetified-play-services-maps-18.0.2-43 C:\Users\ard\.gradle\caches\transforms-3\8c948bc42d9a1f6f7d5480d01fb4d902\transformed\jetified-play-services-maps-18.0.2\res
+com.awesomeproject.app-jetified-play-services-wallet-19.2.0-beta01-44 C:\Users\ard\.gradle\caches\transforms-3\8fda6e62635827702561f702bf75165e\transformed\jetified-play-services-wallet-19.2.0-beta01\res
+com.awesomeproject.app-jetified-startup-runtime-1.1.1-45 C:\Users\ard\.gradle\caches\transforms-3\90606ca86b5deeb55631385fe1d59c33\transformed\jetified-startup-runtime-1.1.1\res
+com.awesomeproject.app-navigation-runtime-2.5.3-46 C:\Users\ard\.gradle\caches\transforms-3\919e346a46b7f4c46ceba92d708aa624\transformed\navigation-runtime-2.5.3\res
+com.awesomeproject.app-appcompat-1.6.1-47 C:\Users\ard\.gradle\caches\transforms-3\921fa40de9e9f7c917829c03efe9ddea\transformed\appcompat-1.6.1\res
+com.awesomeproject.app-jetified-link-20.25.3-48 C:\Users\ard\.gradle\caches\transforms-3\93491e8f4572ff361627cd1d8571d2b2\transformed\jetified-link-20.25.3\res
+com.awesomeproject.app-material-1.8.0-49 C:\Users\ard\.gradle\caches\transforms-3\9b60e84aa7363b2fd2bae0f54a98fd3d\transformed\material-1.8.0\res
+com.awesomeproject.app-jetified-payments-core-20.25.3-50 C:\Users\ard\.gradle\caches\transforms-3\9d86af7f164aa162fa07e239271f40cb\transformed\jetified-payments-core-20.25.3\res
+com.awesomeproject.app-jetified-payments-model-20.25.3-51 C:\Users\ard\.gradle\caches\transforms-3\a51af4d52c388e9724c1b663476cb601\transformed\jetified-payments-model-20.25.3\res
+com.awesomeproject.app-cardview-1.0.0-52 C:\Users\ard\.gradle\caches\transforms-3\a53239ffd4fed3dea80d2bf5e0042eb0\transformed\cardview-1.0.0\res
+com.awesomeproject.app-jetified-ui-unit-1.4.3-53 C:\Users\ard\.gradle\caches\transforms-3\a55614995cbc0f33f1c5753a3d591dce\transformed\jetified-ui-unit-1.4.3\res
+com.awesomeproject.app-jetified-flipper-0.125.0-54 C:\Users\ard\.gradle\caches\transforms-3\a96b3417c959a47cd29eb1baf5d2b0ce\transformed\jetified-flipper-0.125.0\res
+com.awesomeproject.app-jetified-ui-util-1.4.3-55 C:\Users\ard\.gradle\caches\transforms-3\ab5bcf6a1faf93e9f76f530482a49198\transformed\jetified-ui-util-1.4.3\res
+com.awesomeproject.app-jetified-core-ktx-1.9.0-56 C:\Users\ard\.gradle\caches\transforms-3\abca1075faa4ced029d5124ebd5075f8\transformed\jetified-core-ktx-1.9.0\res
+com.awesomeproject.app-jetified-drawee-2.6.0-57 C:\Users\ard\.gradle\caches\transforms-3\acb936d073f6febcb2a5c60361d730e7\transformed\jetified-drawee-2.6.0\res
+com.awesomeproject.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-58 C:\Users\ard\.gradle\caches\transforms-3\b00345229c38fd7a7ac418a49770bfe4\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
+com.awesomeproject.app-jetified-ui-text-1.4.3-59 C:\Users\ard\.gradle\caches\transforms-3\b325a3b86149a178702a6d45f6e133d0\transformed\jetified-ui-text-1.4.3\res
+com.awesomeproject.app-jetified-animation-1.3.1-60 C:\Users\ard\.gradle\caches\transforms-3\b4722a65e6c4367f2bba31d4cb28eea6\transformed\jetified-animation-1.3.1\res
+com.awesomeproject.app-jetified-lifecycle-livedata-core-ktx-2.6.1-61 C:\Users\ard\.gradle\caches\transforms-3\b4b076448f2d818aab9a142d9c2e5c4d\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\res
+com.awesomeproject.app-jetified-appcompat-resources-1.6.1-62 C:\Users\ard\.gradle\caches\transforms-3\bb8c82ed0bb7c2fa548f1b5aa8e8bc54\transformed\jetified-appcompat-resources-1.6.1\res
+com.awesomeproject.app-jetified-play-services-auth-20.3.0-63 C:\Users\ard\.gradle\caches\transforms-3\bfbd718947a4fa1a4078b25a16920cc1\transformed\jetified-play-services-auth-20.3.0\res
+com.awesomeproject.app-jetified-animation-core-1.3.1-64 C:\Users\ard\.gradle\caches\transforms-3\c6b3554268890ae54e8abdf41edd9da5\transformed\jetified-animation-core-1.3.1\res
+com.awesomeproject.app-jetified-ui-graphics-1.4.3-65 C:\Users\ard\.gradle\caches\transforms-3\c8f9e51cb346b4d2593c85c199d22be8\transformed\jetified-ui-graphics-1.4.3\res
+com.awesomeproject.app-jetified-activity-ktx-1.7.0-66 C:\Users\ard\.gradle\caches\transforms-3\c999d4b6d2c483b87d7173e3ce7c3f92\transformed\jetified-activity-ktx-1.7.0\res
+com.awesomeproject.app-jetified-paymentsheet-20.25.3-67 C:\Users\ard\.gradle\caches\transforms-3\cf2237c8f7a83b9334b4518f8b098dc4\transformed\jetified-paymentsheet-20.25.3\res
+com.awesomeproject.app-jetified-payments-ui-core-20.25.3-68 C:\Users\ard\.gradle\caches\transforms-3\d14e30a19b2016a09214311099298684\transformed\jetified-payments-ui-core-20.25.3\res
+com.awesomeproject.app-jetified-lifecycle-viewmodel-ktx-2.6.1-69 C:\Users\ard\.gradle\caches\transforms-3\d99be7fa3156e9b70fd891e70b987ee3\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\res
+com.awesomeproject.app-lifecycle-livedata-core-2.6.1-70 C:\Users\ard\.gradle\caches\transforms-3\dcc203c2a37768b726466a16bc0f7449\transformed\lifecycle-livedata-core-2.6.1\res
+com.awesomeproject.app-lifecycle-viewmodel-2.6.1-71 C:\Users\ard\.gradle\caches\transforms-3\de521c225d8584052854f6cfdf641787\transformed\lifecycle-viewmodel-2.6.1\res
+com.awesomeproject.app-fragment-1.5.5-72 C:\Users\ard\.gradle\caches\transforms-3\de72e40f2f2a8f2bbae33f3e3feb00f6\transformed\fragment-1.5.5\res
+com.awesomeproject.app-jetified-lifecycle-livedata-ktx-2.6.1-73 C:\Users\ard\.gradle\caches\transforms-3\decf5f9371cbc137f850de8f689260eb\transformed\jetified-lifecycle-livedata-ktx-2.6.1\res
+com.awesomeproject.app-jetified-emoji2-1.3.0-74 C:\Users\ard\.gradle\caches\transforms-3\dfb1fbd641ff95becadc057891b90912\transformed\jetified-emoji2-1.3.0\res
+com.awesomeproject.app-jetified-annotation-experimental-1.3.0-75 C:\Users\ard\.gradle\caches\transforms-3\e349d67dd244c30053b365bdd2c1ed17\transformed\jetified-annotation-experimental-1.3.0\res
+com.awesomeproject.app-transition-1.2.0-76 C:\Users\ard\.gradle\caches\transforms-3\e3aeb51b83311d6703f4a4df81ecbea3\transformed\transition-1.2.0\res
+com.awesomeproject.app-jetified-material-icons-core-1.4.3-77 C:\Users\ard\.gradle\caches\transforms-3\ea1739d9867e6959e557bd011a14b8ae\transformed\jetified-material-icons-core-1.4.3\res
+com.awesomeproject.app-jetified-ui-viewbinding-1.4.3-78 C:\Users\ard\.gradle\caches\transforms-3\ecc5fc7c5550d24ddbc47b24e1814ed7\transformed\jetified-ui-viewbinding-1.4.3\res
+com.awesomeproject.app-jetified-emoji2-views-helper-1.3.0-79 C:\Users\ard\.gradle\caches\transforms-3\f42e0211d84457633d7d4fa9076c07e9\transformed\jetified-emoji2-views-helper-1.3.0\res
+com.awesomeproject.app-jetified-lifecycle-runtime-ktx-2.6.1-80 C:\Users\ard\.gradle\caches\transforms-3\f7f8d5b5d54a687de32cf86f98225001\transformed\jetified-lifecycle-runtime-ktx-2.6.1\res
+com.awesomeproject.app-jetified-play-services-base-18.0.1-81 C:\Users\ard\.gradle\caches\transforms-3\f9c793245c95ea736b7d97b3879631e1\transformed\jetified-play-services-base-18.0.1\res
+com.awesomeproject.app-navigation-runtime-ktx-2.5.3-82 C:\Users\ard\.gradle\caches\transforms-3\fbe7b10b2247f5aac1f9f6fe2c7a1943\transformed\navigation-runtime-ktx-2.5.3\res
+com.awesomeproject.app-jetified-navigation-compose-2.5.3-83 C:\Users\ard\.gradle\caches\transforms-3\ff53df8642227904e97cf69c6a75c4f9\transformed\jetified-navigation-compose-2.5.3\res
+com.awesomeproject.app-google-services-84 F:\react native project\secondProject\AwesomeProject\android\app\build\generated\res\google-services\debug
+com.awesomeproject.app-pngs-85 F:\react native project\secondProject\AwesomeProject\android\app\build\generated\res\pngs\debug
+com.awesomeproject.app-resValues-86 F:\react native project\secondProject\AwesomeProject\android\app\build\generated\res\resValues\debug
+com.awesomeproject.app-rs-87 F:\react native project\secondProject\AwesomeProject\android\app\build\generated\res\rs\debug
+com.awesomeproject.app-mergeDebugResources-88 F:\react native project\secondProject\AwesomeProject\android\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.awesomeproject.app-mergeDebugResources-89 F:\react native project\secondProject\AwesomeProject\android\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.awesomeproject.app-merged_res-90 F:\react native project\secondProject\AwesomeProject\android\app\build\intermediates\merged_res\debug
+com.awesomeproject.app-debug-91 F:\react native project\secondProject\AwesomeProject\android\app\src\debug\res
+com.awesomeproject.app-main-92 F:\react native project\secondProject\AwesomeProject\android\app\src\main\res
+com.awesomeproject.app-packaged_res-93 F:\react native project\secondProject\AwesomeProject\node_modules\@react-native-firebase\app\android\build\intermediates\packaged_res\debug
+com.awesomeproject.app-packaged_res-94 F:\react native project\secondProject\AwesomeProject\node_modules\@react-native-firebase\firestore\android\build\intermediates\packaged_res\debug
+com.awesomeproject.app-packaged_res-95 F:\react native project\secondProject\AwesomeProject\node_modules\@stripe\stripe-react-native\android\build\intermediates\packaged_res\debug
+com.awesomeproject.app-packaged_res-96 F:\react native project\secondProject\AwesomeProject\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
+com.awesomeproject.app-packaged_res-97 F:\react native project\secondProject\AwesomeProject\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
+com.awesomeproject.app-packaged_res-98 F:\react native project\secondProject\AwesomeProject\node_modules\react-native-splash-screen\android\build\intermediates\packaged_res\debug

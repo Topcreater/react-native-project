@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.awesomeproject.app-mergeDebugResources-85:/values-tr-rTR/values-tr-rTR.xml",
+            "outputFile": "com.awesomeproject.app-mergeDebugResources-88:/values-tr-rTR/values-tr-rTR.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ard\\.gradle\\caches\\transforms-3\\64fc0743870084a073aa9ea92531796b\\transformed\\jetified-stripe-3ds2-android-6.1.7\\res\\values-tr-rTR\\values-tr-rTR.xml",
+                    "source": "C:\\Users\\ard\\.gradle\\caches\\transforms-3\\5083bdf342584876462799bbb37b470e\\transformed\\jetified-stripe-3ds2-android-6.1.7\\res\\values-tr-rTR\\values-tr-rTR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
